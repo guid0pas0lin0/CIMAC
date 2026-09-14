@@ -1,0 +1,46 @@
+name: Replace CIMAC staging domain
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/replace-cimac-domain.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  replace-domain:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Replace staging domain in newsletter HTML files
+        shell: bash
+        run: |
+          set -e
+          TARGET_DIR="CIMAC_Newsletter_GitHub_Pages_READY/newsletters"
+          OLD='https://wizardly-cohen.144-76-124-146.plesk.page/'
+          NEW='https://cimac.it/'
+
+          grep -RIl --include='*.html' "$OLD" "$TARGET_DIR" | while IFS= read -r file; do
+            sed -i "s#${OLD}#${NEW}#g" "$file"
+          done
+
+          echo "Remaining staging-domain occurrences:"
+          grep -RIn --include='*.html' "$OLD" "$TARGET_DIR" || true
+
+      - name: Commit changes if needed
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add CIMAC_Newsletter_GitHub_Pages_READY/newsletters
+          git commit -m "Replace staging domain with cimac.it in newsletters"
+          git push
