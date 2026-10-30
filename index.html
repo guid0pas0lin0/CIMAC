@@ -38,13 +38,15 @@
     footer{border-top:1px solid var(--line);padding:24px 0 34px;color:#98a2b3;font-size:12px}
     @media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:620px){.wrap{width:min(100% - 28px,1180px)}.head{padding:18px 0}.head img{width:150px}.head-note{font-size:9px;letter-spacing:.09em}.hero{padding:42px 0 18px}.lead{font-size:16px}.grid{grid-template-columns:1fr;gap:16px;padding-top:22px}}
+  
+    .language-nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.lang-tab{padding:12px 22px;border:1px solid #cdd7e3;background:white;border-radius:11px;font-size:14px;font-weight:800;color:var(--blue);text-decoration:none}.lang-tab.active{background:var(--blue);color:white}.section-title{font-size:24px;margin:0}.language-actions{margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:8px}.language-actions a,.language-actions span{padding:10px 8px;text-align:center;border-radius:8px;font-size:12px;font-weight:700}.language-actions a{background:#00509b;color:white;text-decoration:none}.language-actions span{background:#f1f4f8;color:#8a94a3;cursor:not-allowed}.approval-note{margin:12px 0;font-size:11px;color:#667085}.master-panel{padding:24px;background:white;border:1px solid var(--line);border-radius:14px;margin-bottom:26px}.master-panel h2{margin-bottom:7px}.master-panel p{font-size:14px;color:#667085;line-height:1.6}.master-link{display:inline-block;padding:12px 17px;color:white;background:var(--blue);font-weight:700;border-radius:9px;text-decoration:none;font-size:13px}.english-section[hidden]{display:none}
   </style>
 </head>
 <body>
   <header>
     <div class="wrap head">
       <img src="CIMAC_Newsletter_GitHub_Pages_READY/assets/cimac-logo.png" alt="CIMAC · We test, we certify">
-      <div class="head-note">Anteprime newsletter<br>Settembre 2026</div>
+      <div class="head-note">Archivio newsletter<br>Italiano / English</div>
     </div>
   </header>
 
@@ -52,52 +54,57 @@
     <section class="hero">
       <div class="eyebrow">Area anteprime</div>
       <h1>Newsletter CIMAC</h1>
-      <p class="lead">Seleziona una comunicazione per aprire l'anteprima completa. Ogni pagina riproduce il layout responsive previsto per l'invio email.</p>
+      <p class="lead">Seleziona la lingua, consulta le anteprime e scarica l’HTML soltanto dopo approvazione. Le versioni inglesi saranno rese disponibili dopo traduzione e revisione.</p>
+      <nav class="language-nav" aria-label="Selezione lingua"><a href="#italiano" class="lang-tab active" data-lang="it" aria-pressed="true">🇮🇹 Italiano (IT)</a><a href="#english" class="lang-tab" data-lang="en" aria-pressed="false">🇬🇧 English (EN)</a></nav>
     </section>
-
-    <section class="grid" aria-label="Anteprime newsletter">
+    <h2 id="language-heading" class="section-title">Newsletter in italiano</h2>
+    <section id="italiano" class="grid" aria-label="Anteprime newsletter">
       <article class="card">
         <a class="visual" href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/safety-expo-2026/" target="_blank" rel="noopener"><img src="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/safety-expo-2026/assets/hero-safety-expo-2026.png" alt="" loading="lazy"></a>
-        <div class="card-body"><span class="tag">Evento</span><h2>CIMAC al Safety Expo 2026</h2><p>16–17 settembre 2026 · Fiera di Bergamo</p><a class="button" href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/safety-expo-2026/" target="_blank" rel="noopener">Apri anteprima <span>↗</span></a></div>
+        <div class="card-body"><span class="tag">Evento</span><h2>CIMAC al Safety Expo 2026</h2><p>16–17 settembre 2026 · Fiera di Bergamo</p><div class="approval-note">IT · In revisione — download non ancora approvato</div><div class="language-actions"><a href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/safety-expo-2026/" target="_blank" rel="noopener">Anteprima IT ↗</a><span title="Disponibile dopo approvazione">HTML IT ↓</span><span title="Traduzione non disponibile">Anteprima EN</span><span title="Disponibile dopo approvazione">HTML EN ↓</span></div></div>
       </article>
 
       <article class="card">
         <a class="visual" href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/en-iso-24232/" target="_blank" rel="noopener"><img src="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/en-iso-24232/assets/hero-en-iso-24232.jpg" alt="" loading="lazy"></a>
-        <div class="card-body"><span class="tag">Aggiornamento normativo</span><h2>EN ISO 24232: la nuova norma per gli indumenti di protezione dalla pioggia</h2><p>Nuova norma di riferimento che sostituisce EN 343:2019</p><a class="button" href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/en-iso-24232/" target="_blank" rel="noopener">Apri anteprima <span>↗</span></a></div>
+        <div class="card-body"><span class="tag">Aggiornamento normativo</span><h2>EN ISO 24232: la nuova norma per gli indumenti di protezione dalla pioggia</h2><p>Nuova norma di riferimento che sostituisce EN 343:2019</p><div class="approval-note">IT · In revisione — download non ancora approvato</div><div class="language-actions"><a href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/en-iso-24232/" target="_blank" rel="noopener">Anteprima IT ↗</a><span title="Disponibile dopo approvazione">HTML IT ↓</span><span title="Traduzione non disponibile">Anteprima EN</span><span title="Disponibile dopo approvazione">HTML EN ↓</span></div></div>
       </article>
 
       <article class="card">
         <a class="visual" href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/pfas-tessile-calzaturiero/" target="_blank" rel="noopener"><img src="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/pfas-tessile-calzaturiero/assets/hero-pfas.jpg" alt="" loading="lazy"></a>
-        <div class="card-body"><span class="tag">Aggiornamento normativo</span><h2>PFAS nei materiali tessili e calzaturieri: perché è il momento di agire</h2><p>Materiali, filiera e preparazione ai futuri requisiti</p><a class="button" href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/pfas-tessile-calzaturiero/" target="_blank" rel="noopener">Apri anteprima <span>↗</span></a></div>
+        <div class="card-body"><span class="tag">Aggiornamento normativo</span><h2>PFAS nei materiali tessili e calzaturieri: perché è il momento di agire</h2><p>Materiali, filiera e preparazione ai futuri requisiti</p><div class="approval-note">IT · In revisione — download non ancora approvato</div><div class="language-actions"><a href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/pfas-tessile-calzaturiero/" target="_blank" rel="noopener">Anteprima IT ↗</a><span title="Disponibile dopo approvazione">HTML IT ↓</span><span title="Traduzione non disponibile">Anteprima EN</span><span title="Disponibile dopo approvazione">HTML EN ↓</span></div></div>
       </article>
 
       <article class="card">
         <a class="visual" href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/bisfenoli-moca/" target="_blank" rel="noopener"><img src="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/bisfenoli-moca/assets/hero-moca.jpg" alt="" loading="lazy"></a>
-        <div class="card-body"><span class="tag">Aggiornamento normativo</span><h2>Bisfenoli nei MOCA: cosa cambia dal 20 luglio 2026</h2><p>BPA, nuovi requisiti e verifiche per materiali a contatto con alimenti</p><a class="button" href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/bisfenoli-moca/" target="_blank" rel="noopener">Apri anteprima <span>↗</span></a></div>
+        <div class="card-body"><span class="tag">Aggiornamento normativo</span><h2>Bisfenoli nei MOCA: cosa cambia dal 20 luglio 2026</h2><p>BPA, nuovi requisiti e verifiche per materiali a contatto con alimenti</p><div class="approval-note">IT · In revisione — download non ancora approvato</div><div class="language-actions"><a href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/bisfenoli-moca/" target="_blank" rel="noopener">Anteprima IT ↗</a><span title="Disponibile dopo approvazione">HTML IT ↓</span><span title="Traduzione non disponibile">Anteprima EN</span><span title="Disponibile dopo approvazione">HTML EN ↓</span></div></div>
       </article>
 
       <article class="card">
         <a class="visual" href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/certificazione-ce-calzature/" target="_blank" rel="noopener"><img src="https://www.cimac.it/wp-content/uploads/2026/10/Scarpe-antinfortunistiche-in-laboratorio.png" alt="" loading="lazy"></a>
-        <div class="card-body"><span class="tag">Guida</span><h2>Calzature di sicurezza: quando serve la certificazione CE?</h2><p>Prove, requisiti e percorso di conformità</p><a class="button" href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/certificazione-ce-calzature/" target="_blank" rel="noopener">Apri anteprima <span>↗</span></a></div>
+        <div class="card-body"><span class="tag">Guida</span><h2>Calzature di sicurezza: quando serve la certificazione CE?</h2><p>Prove, requisiti e percorso di conformità</p><div class="approval-note">IT · In revisione — download non ancora approvato</div><div class="language-actions"><a href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/certificazione-ce-calzature/" target="_blank" rel="noopener">Anteprima IT ↗</a><span title="Disponibile dopo approvazione">HTML IT ↓</span><span title="Traduzione non disponibile">Anteprima EN</span><span title="Disponibile dopo approvazione">HTML EN ↓</span></div></div>
       </article>
 
       <article class="card">
         <a class="visual" href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/certificazioni-dpi/" target="_blank" rel="noopener"><img src="https://www.cimac.it/wp-content/uploads/2026/10/Sicurezza-industriale-in-laboratorio-1.png" alt="" loading="lazy"></a>
-        <div class="card-body"><span class="tag">Guida</span><h2>Certificazioni DPI: stai seguendo il percorso corretto?</h2><p>Categorie, prove e valutazione della conformità</p><a class="button" href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/certificazioni-dpi/" target="_blank" rel="noopener">Apri anteprima <span>↗</span></a></div>
+        <div class="card-body"><span class="tag">Guida</span><h2>Certificazioni DPI: stai seguendo il percorso corretto?</h2><p>Categorie, prove e valutazione della conformità</p><div class="approval-note">IT · In revisione — download non ancora approvato</div><div class="language-actions"><a href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/certificazioni-dpi/" target="_blank" rel="noopener">Anteprima IT ↗</a><span title="Disponibile dopo approvazione">HTML IT ↓</span><span title="Traduzione non disponibile">Anteprima EN</span><span title="Disponibile dopo approvazione">HTML EN ↓</span></div></div>
       </article>
       <article class="card">
         <a class="visual" href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/export-customs-compliance-2026/" target="_blank" rel="noopener"><img src="https://www.cimac.it/wp-content/uploads/2026/10/CIMAC_02_Export_italiano-1.png" alt="" loading="lazy"></a>
-        <div class="card-body"><span class="tag">Formazione</span><h2>Export &amp; Customs Compliance: 5 moduli online</h2><p>Dal 4 novembre al 1 dicembre 2026 · Corso per il settore calzaturiero</p><a class="button" href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/export-customs-compliance-2026/" target="_blank" rel="noopener">Apri anteprima <span>↗</span></a></div>
+        <div class="card-body"><span class="tag">Formazione</span><h2>Export &amp; Customs Compliance: 5 moduli online</h2><p>Dal 4 novembre al 1 dicembre 2026 · Corso per il settore calzaturiero</p><div class="approval-note">IT · In revisione — download non ancora approvato</div><div class="language-actions"><a href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/export-customs-compliance-2026/" target="_blank" rel="noopener">Anteprima IT ↗</a><span title="Disponibile dopo approvazione">HTML IT ↓</span><span title="Traduzione non disponibile">Anteprima EN</span><span title="Disponibile dopo approvazione">HTML EN ↓</span></div></div>
       </article>
       <article class="card">
         <a class="visual" href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/ppwr-conformita-imballaggi/" target="_blank" rel="noopener"><img src="https://www.cimac.it/wp-content/uploads/2026/10/Imballaggi-sostenibili-in-laboratorio.png" alt="Imballaggi sostenibili in laboratorio" loading="lazy"></a>
-        <div class="card-body"><span class="tag">Aggiornamento normativo</span><h2>PPWR: verifica la conformità dei tuoi imballaggi</h2><p>Documentazione tecnica, prove di laboratorio e dichiarazione UE</p><a class="button" href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/ppwr-conformita-imballaggi/" target="_blank" rel="noopener">Apri anteprima <span>↗</span></a></div>
+        <div class="card-body"><span class="tag">Aggiornamento normativo</span><h2>PPWR: verifica la conformità dei tuoi imballaggi</h2><p>Documentazione tecnica, prove di laboratorio e dichiarazione UE</p><div class="approval-note">IT · In revisione — download non ancora approvato</div><div class="language-actions"><a href="CIMAC_Newsletter_GitHub_Pages_READY/newsletters/ppwr-conformita-imballaggi/" target="_blank" rel="noopener">Anteprima IT ↗</a><span title="Disponibile dopo approvazione">HTML IT ↓</span><span title="Traduzione non disponibile">Anteprima EN</span><span title="Disponibile dopo approvazione">HTML EN ↓</span></div></div>
       </article>
     </section>
 
-    <div class="info"><strong>Nota preview:</strong> i link di disiscrizione MailUp sono disattivati in questa versione web di presentazione. I file originali per l'invio restano separati e invariati.</div>
+    <section id="english" class="english-section" hidden><div class="info"><strong>English newsletter:</strong> le traduzioni non sono ancora state approvate. Le versioni EN saranno disponibili qui, senza modificare le versioni italiane.</div></section>
+    <section class="master-panel"><h2>Master CIMAC riutilizzabile</h2><p>Template HTML vuoto con placeholder per testi, immagini e CTA. Non è una newsletter approvata né pronta all’invio senza compilazione.</p><a class="master-link" href="templates/CIMAC_MASTER_TEMPLATE.html" download="CIMAC_MASTER_TEMPLATE.html">Scarica master HTML vuoto ↓</a></section>
+    <div class="info"><strong>Nota:</strong> anteprime web di revisione. Gli HTML destinati all’invio MailUp richiedono approvazione specifica, URL assoluti per le immagini e link di disiscrizione funzionanti.</div>
   </main>
 
   <footer><div class="wrap">CIMAC · Anteprime riservate alla revisione cliente</div></footer>
-</body>
+<script>
+(function(){var tabs=document.querySelectorAll('[data-lang]'),it=document.getElementById('italiano'),en=document.getElementById('english'),heading=document.getElementById('language-heading');function show(lang){it.hidden=lang==='en';en.hidden=lang!=='en';heading.textContent=lang==='en'?'English newsletters':'Newsletter in italiano';tabs.forEach(function(t){var active=t.getAttribute('data-lang')===lang;t.classList.toggle('active',active);t.setAttribute('aria-pressed',active?'true':'false')})}tabs.forEach(function(t){t.addEventListener('click',function(e){e.preventDefault();var lang=t.getAttribute('data-lang');show(lang);history.replaceState(null,'','#'+(lang==='en'?'english':'italiano'))})});show(location.hash==='#english'?'en':'it')})();
+</script></body>
 </html>
